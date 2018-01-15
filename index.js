@@ -22,7 +22,7 @@ function currentLine(katzDeliLine) {
       }
       else
       {
-        line += "," + num + ". " + katzDeliLine[i]
+        line += ", " + num + ". " + katzDeliLine[i]
       }
     }
   }
