@@ -12,15 +12,17 @@ function nowServing(katzDeliLine){
 }
 function currentLine(katzDeliLine) {
   var line = "The line is currently"
+  var num = 0
   if (katzDeliLine.length > 0) {
     line += ": "
     for (var i = 0; i < katzDeliLine.length; i++) {
+      num = i + 1
       if (i===0) {
-        line += i + ". " + katzDeliLine[i]
+        line += num + ". " + katzDeliLine[i]
       }
       else
       {
-        line += "," + i + ". " + katzDeliLine[i]
+        line += "," + num + ". " + katzDeliLine[i]
       }
     }
   }
