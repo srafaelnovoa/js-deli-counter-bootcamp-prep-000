@@ -4,5 +4,10 @@ function takeANumber(katzDeliLine,name) {
   return "Welcome, " + name + ". You are number " + num + " in line."
 }
 function nowServing(katzDeliLine){
-  return katzDeliLine.shift()
+  if (katzDeliLine.length > 0) {
+  return katzDeliLine.shift()  
+  }
+  else
+  return "There is nobody waiting to be served!"
+  
 }
